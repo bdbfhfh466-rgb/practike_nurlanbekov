@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Practice Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Шрифты с Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span>Practice<b>Hub</b></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home"     class="nav-link">Главная</a>
+        <a href="#about"    class="nav-link">О практике</a>
+        <a href="#skills"   class="nav-link">Навыки</a>
+        <a href="#gallery"  class="nav-link">Галерея</a>
+        <a href="#contact"  class="nav-link">Контакт</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Переключатель темы -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <!-- Бургер для мобильного -->
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <!-- Декоративные фигуры на фоне -->
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <i class="fa-solid fa-bolt"></i> Школьная практика 2025
+      </div>
+      <h1 class="hero-title reveal">
+        Твой старт<br/>
+        <span class="gradient-text">в профессию</span>
+      </h1>
+      <p class="hero-desc reveal">
+        School Practice Hub — место, где школьники получают реальный опыт,
+        прокачивают навыки и строят будущую карьеру уже сегодня.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#about"   class="btn btn-primary">Узнать больше <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-outline">Связаться</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num" data-target="120">0</span><span>Участников</span></div>
+        <div class="stat"><span class="stat-num" data-target="14">0</span><span>Направлений</span></div>
+        <div class="stat"><span class="stat-num" data-target="98">0</span><span>% довольных</span></div>
+      </div>
+    </div>
+
+    <!-- Плавающая карточка -->
+    <div class="hero-card floating reveal">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <p>Летняя практика<br/><b>уже открыта!</b></p>
+    </div>
+  </section>
+
+  <!-- ========== О ПРАКТИКЕ ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">О практике</div>
+      <h2 class="section-title reveal">Что такое<br/><span class="gradient-text">School Practice?</span></h2>
+
+      <div class="about-grid">
+        <!-- Левая колонка — текст -->
+        <div class="about-text reveal">
+          <p>
+            School Practice Hub — это программа, которая соединяет школьников с
+            реальными проектами и наставниками. Мы верим, что лучший способ
+            научиться — это делать настоящую работу.
+          </p>
+          <p>
+            За время практики ты окунёшься в рабочую среду, познакомишься с
+            профессионалами и добавишь первые строки в своё резюме.
+          </p>
+          <ul class="about-list">
+            <li><i class="fa-solid fa-check-circle"></i> Реальные проекты с живыми задачами</li>
+            <li><i class="fa-solid fa-check-circle"></i> Наставник на каждом этапе</li>
+            <li><i class="fa-solid fa-check-circle"></i> Сертификат по итогам</li>
+            <li><i class="fa-solid fa-check-circle"></i> Нетворкинг с лучшими командами</li>
+          </ul>
+        </div>
+
+        <!-- Правая колонка — карточки-фичи -->
+        <div class="about-features">
+          <div class="feature-card reveal">
+            <div class="feat-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Быстрый старт</h3>
+            <p>Погружение с первого дня. Никаких скучных лекций — только практика.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feat-icon"><i class="fa-solid fa-users"></i></div>
+            <h3>Командная работа</h3>
+            <p>Учись работать в команде, общаться и распределять задачи.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feat-icon"><i class="fa-solid fa-trophy"></i></div>
+            <h3>Признание</h3>
+            <p>Лучшие участники получают призы и рекомендации от партнёров.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== НАВЫКИ ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Навыки</div>
+      <h2 class="section-title reveal">Что ты <span class="gradient-text">освоишь</span></h2>
+      <p class="section-sub reveal">Каждое направление — это набор компетенций, востребованных на рынке уже сейчас.</p>
+
+      <div class="skills-grid">
+        <!-- Карточки навыков -->
+        <div class="skill-card reveal" style="--delay:0s">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>Веб-разработка</h3>
+          <p>HTML, CSS, JavaScript — создавай сайты с нуля.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-level">Средний уровень</span>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.1s">
+          <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>UI/UX Дизайн</h3>
+          <p>Figma, прототипы, пользовательский опыт.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-level">Начальный → средний</span>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.2s">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Базы данных</h3>
+          <p>SQL, основы работы с данными и запросами.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          <span class="skill-level">Начальный уровень</span>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.3s">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Скрипты, автоматизация, первые шаги в Data Science.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-level">Начальный → средний</span>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.4s">
+          <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Маркетинг</h3>
+          <p>SMM, контент, аналитика и продвижение проектов.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-level">Средний уровень</span>
+        </div>
+
+        <div class="skill-card reveal" style="--delay:.5s">
+          <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>ИИ-инструменты</h3>
+          <p>Работа с AI-ассистентами, промпт-инжиниринг.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          <span class="skill-level">Базовый уровень</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ГАЛЕРЕЯ ========== -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-label reveal">Галерея</div>
+      <h2 class="section-title reveal">Моменты <span class="gradient-text">практики</span></h2>
+
+      <div class="gallery-grid">
+        <!-- Плейсхолдеры фотографий с иконками и подписями -->
+        <div class="gallery-item reveal big">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="gallery-overlay"><span>День 1: Онбординг</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <div class="gallery-overlay"><span>Командный хакатон</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="gallery-overlay"><span>Лекция от наставника</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="gallery-overlay"><span>Вручение сертификатов</span></div>
+        </div>
+        <div class="gallery-item reveal">
+          <div class="gallery-placeholder">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <div class="gallery-overlay"><span>Неформальные встречи</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ФОРМА ОБРАТНОЙ СВЯЗИ ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Контакт</div>
+      <h2 class="section-title reveal">Напиши <span class="gradient-text">нам</span></h2>
+      <p class="section-sub reveal">Есть вопросы? Хочешь записаться? Заполни форму — мы ответим в течение 24 часов.</p>
+
+      <div class="contact-wrapper">
+        <!-- Контактная информация -->
+        <div class="contact-info reveal">
+          <div class="info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <b>Адрес</b>
+              <span>ул. Школьная, 1, Бишкек</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <b>Email</b>
+              <span>hello@practicehub.kg</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <b>Телефон</b>
+              <span>+996 700 000 000</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Форма -->
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Твоё имя" required />
+              <span class="error-msg" id="nameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required />
+              <span class="error-msg" id="emailErr"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Тема</label>
+            <input type="text" id="subject" name="subject" placeholder="О чём вопрос?" required />
+            <span class="error-msg" id="subjectErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" rows="5" placeholder="Напиши подробнее..." required></textarea>
+            <span class="error-msg" id="messageErr"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Отправить <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <!-- Успешное сообщение -->
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Сообщение отправлено! Скоро ответим.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span>Practice<b>Hub</b></span>
+          </a>
+          <p>Школьная практика нового поколения. Реальный опыт — уже сейчас.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Навигация</h4>
+          <a href="#home">Главная</a>
+          <a href="#about">О практике</a>
+          <a href="#skills">Навыки</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contact">Контакт</a>
+        </div>
+        <div class="footer-nav">
+          <h4>Контакты</h4>
+          <a href="mailto:hello@practicehub.kg">hello@practicehub.kg</a>
+          <a href="tel:+996700000000">+996 700 000 000</a>
+          <a href="#">Telegram</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 School Practice Hub. Создано с <i class="fa-solid fa-heart"></i> для школьного проекта.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
